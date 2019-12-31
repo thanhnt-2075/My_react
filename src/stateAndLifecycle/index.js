@@ -81,4 +81,7 @@ import { element } from 'prop-types';
 
  //So sánh props với state:
  //props: nhận dữ liệu từ bên ngoài và không thể thay đổi gtri
- //state: Dữ liệu nội bộ, có thể thay đổi gtri this.state{}, phạm vị private trong component
+ //state: Dữ liệu nội bộ, có thể thay đổi gtri this.setState{}, phạm vị private trong component
+
+
+ //lifecycel trong reactjs

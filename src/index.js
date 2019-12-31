@@ -10,6 +10,13 @@ import Demo from './Demo';
 import { publicDecrypt } from 'crypto';
 import { userInfo } from 'os';
 import State from './stateAndLifecycle';
+import AppLifecycel from './stateAndLifecycle/App';
+import LoginControl from './Conditional Rendering/LoginLogout';
+//State up
+import Calculator from './LiftingStateUp/StateUpDocs';
+import Calculator1 from './LiftingStateUp/exception1';
+//Composition
+import SignUpDialog from './Composition'
 
 import MultiForm from './MultiForm/index';
 
@@ -62,4 +69,18 @@ serviceWorker.unregister();
 // ReactDOM.render(<MultiForm />, document.getElementById('root'));
 
 //State and lifecycle
-ReactDOM.render(<State />, document.getElementById('root'));
+// ReactDOM.render(<State />, document.getElementById('root'));
+
+//lifecycles
+// ReactDOM.render(<AppLifecycel />, document.getElementById('root'));
+
+//login and logout
+// ReactDOM.render(<LoginControl />, document.getElementById('root'));
+
+//State Exception1:
+// ReactDOM.render(<Calculator1 />, document.getElementById('root'));
+//State Up 
+// ReactDOM.render(<Calculator />, document.getElementById('root'));
+
+//Sử dụng childen trong composition
+ReactDOM.render(<SignUpDialog />, document.getElementById('root'));

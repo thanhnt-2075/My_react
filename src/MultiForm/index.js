@@ -11,6 +11,8 @@ class MultiForm extends Component {
         this.handInputChange = this.handInputChange.bind(this);
         this.handSubmitChange = this.handSubmitChange.bind(this);
         this.input = React.createRef();//Ref
+        //React components có thể tương tác với các child element của chúng.
+        //Trong hầu hết các trường hợp, refs được sử dụng để tương tác với các UI element hay chính là các element nhận input từ người dùng
     }
 
     handInputChange(event) {
